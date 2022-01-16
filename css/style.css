@@ -14,22 +14,73 @@ text-decoration: underline;
 margin-left: 16ex;
 }
 
-.PV {
-width: 11ex;
+.field-label{
+    font-weight: 900;
+    font-family: "Raleway", sans-serif;
+    color: rgb(47, 72, 130);
+    font-size: 1.2em;
+    margin-bottom: 0.4em;
+    display: inline-block;
+    margin-left: 800px;
 }
 
-.MF {
-width: 5ex;
+.field-input {
+    width: 125px;
+    font: 21px / 32px
+      "Open Sans",sans-serif;
+    padding-left: 11px;
+    padding-right: 11px;
+    border: 1px solid black;
+    box-shadow: inset 1px 5px 9px -7px rgb(0 0 0 / 40%);
+    background-color: white;
+    margin-left: 800px;
 }
 
-.I {
-width: 5ex;
+.field-input-special1 {
+    width: 125px;
+    font: 21px / 32px
+      "Open Sans",sans-serif;
+    padding-left: 11px;
+    padding-right: 11px;
+    border: 1px solid black;
+    box-shadow: inset 1px 5px 9px -7px rgb(0 0 0 / 40%);
+    background-color: white;
+    margin-left: 800px;
 }
 
-.N {
-width: 3.5ex;
+.field-input-special2 {
+    width: 125px;
+    font: 21px / 32px
+      "Open Sans",sans-serif;
+    padding-left: 11px;
+    padding-right: 11px;
+    border: 1px solid black;
+    box-shadow: inset 1px 5px 9px -7px rgb(0 0 0 / 40%);
+    background-color: white;
+    
 }
 
+.button {
+    border: none;
+    border-radius: 0px;
+    width: auto;
+    padding: 0.4em 1em 0.6em;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+	font-weight:bold;
+	text-transform: none;
+	font-size: 1em;
+    background-color: rgb(47, 72, 130);
+	color: white;
+    transition:  background-color 200ms ease-out;
+}
+
+.button:hover {
+    background-color: rgb(90, 128, 216);
+}
 .PVMFPrime {
 width: 11ex;
 }
@@ -48,10 +99,8 @@ width: 10ex;
 }
 
 .sep {
-width: 87ex;   
-margin-left: 0; 
-margin-top: 1ex;
-margin-bottom: 2ex;
+width: 40%;   
+margin: 0 30% 0 30%;
 }
 
 .calculer {
@@ -68,11 +117,11 @@ font-size: 15px;
 
 
 .tauxSCHL_div{
-    display: none;
+    display: block;
 }
 
 
 .result_div {
-display: none;
+display: block;
 
 }

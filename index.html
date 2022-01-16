@@ -2,45 +2,48 @@
   <head> 
       <title>Calculatrice financière</title>
        
-      <script src="scripts/calc_scripts.js"></script>          
+      <script src="scripts/calc_scripts.js"></script>      
       <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body>
       
-        <h1> Calculatrice financière par Gabriel Munger   </h1><br><br>
+        <h1 style="text-align: center ; border: 0px; margin: 0px; padding-top: 20px; padding-bottom: 20px; background-color: rgb(170, 170, 170);"; > Calculatrice financière par Gabriel Munger   </h1><br><br>
 
         <!--<button class="Test" onclick="Test();">Test</button>-->
         
-        <p class="parag"> Veuillez bien remplir tous les champs</p><br><br>
+        <!--<p class="parag"> Veuillez bien remplir tous les champs</p><br><br>-->
+
+        <br><br><br>
         
       <div>
-          <label>Veuillez inscrire le montant du prêt ($) : </label>
-          <input class="PV" id="PV" type="text" /><br><br>
+          
+          <label class="field-label" >Prix d'achat</label><br>
+          <input class="field-input" id="PV" type="number" /><br><br>
       </div>
         
       <div>
-           <label>Veuillez inscrire la mise de fonds que vous désirez effectuer (%) :</label> 
-           <input class="MF" id="MF" type="text" /><br><br>
+           <label class="field-label">Mise de fonds</label><br>
+           <input class="field-input" id="MF" type="number" min="10000" step="1" max="10000000" /><label for="MF"> $</label><br><br>
       </div>
 
       <div>
-           <label> Veuillez inscrire le taux d'intérêt fixe sur 5 ans (%) :</label>
-           <input class="I" id="I" type="text" /><br><br>
+           <label class="field-label"> Taux d'intérêt fixe sur 5 ans</label>
+           <input class="field-input" id="I" type="text" /><br><br>
       </div>
 
       <div>
-           <label> Veuillez inscrire la durée du prêt en nombre d'années :</label>
-            <input class="N" id="N" type="text" /><br><br>
+           <label class="field-label"> Période d'amortissement <br>(années)</label>
+            <input class="field-input" id="N" type="text" /><br><br>
       </div>
 
-      <div class="buttons">
-        <button class="calculer" onclick="calc();">Calculer</button>
-        <button class="reset" onClick="window.location.reload();">Tout effacer</button>
+      <div class="buttons" style="margin-bottom: 30px; margin-top: 30px;">
+        <button style="margin-left: 800px;"class="button" onclick="calc();">Calculer</button>
+        <button class="button" onClick="window.location.reload();">Tout effacer</button>
       </div>
 
     <div id="result_div" class="result_div">
-           <hr class="sep"> <p style="color:red; text-decoration: underline; margin-left: 35ex;" >Résultat</p><br>
+           <hr class="sep"> <p style=" text-align: center; font-weight: normal; font-size: 1.8em;" >Résultat</p><br>
 
       <!-- <div id="PVMFPrime_div" class="PVMFPrime_div">
            <label>Le montant total de l'hypothèque à payer incluant la prime est de : </label>     
@@ -48,13 +51,15 @@
       </div>-->
 
       <div class="tauxSCHL_div" id="tauxSCHL_div">
-        <label>La valeur de la prime SCHL en pourcentage de la valeur du prêt est de :</label> 
-        <input class="tauxSCHL" id="tauxSCHL" type="text" readonly="true" /><label> %</label><label>&nbsp;&nbsp;&nbsp;&nbsp; → &nbsp;&nbsp;&nbsp;&nbsp; </label><input class="percent_to_dollars" id="%to$" readonly="true" /><label> $</label><br><br>
+        <label class="field-label">Prime SCHL</label><br>
+        <input class="field-input-special1" id="tauxSCHL" type="text" readonly="true" /> <label> %</label>&nbsp;&nbsp;&nbsp;
+        <span style="font-size: 30px; font: bold;"> →</span>&nbsp;&nbsp;&nbsp;   
+        <input class="field-input-special2"  id="%to$" readonly="true" /><label> $</label><br><br>
       </div>
 
       <div>
-        <label>Le montant mensuel que vous devez payer est de :</label> 
-        <input class="paiement" id="paiement" type="text" readonly="true" /><label> $</label><br><br>
+        <label class="field-label">Montant mensuel à débourser</label> 
+        <input class="field-input" id="paiement" type="text" readonly="true" /><label> $</label><br><br>
       </div>
     </div>
 
