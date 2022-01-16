@@ -1,0 +1,62 @@
+<html>
+  <head> 
+      <title>Calculatrice financière</title>
+       
+      <script src="scripts/calc_scripts.js"></script>          
+      <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+      
+        <h1> Calculatrice financière par Gabriel Munger   </h1><br><br>
+
+        <!--<button class="Test" onclick="Test();">Test</button>-->
+        
+        <p class="parag"> Veuillez bien remplir tous les champs</p><br><br>
+        
+      <div>
+          <label>Veuillez inscrire le montant du prêt ($) : </label>
+          <input class="PV" id="PV" type="text" /><br><br>
+      </div>
+        
+      <div>
+           <label>Veuillez inscrire la mise de fonds que vous désirez effectuer (%) :</label> 
+           <input class="MF" id="MF" type="text" /><br><br>
+      </div>
+
+      <div>
+           <label> Veuillez inscrire le taux d'intérêt fixe sur 5 ans (%) :</label>
+           <input class="I" id="I" type="text" /><br><br>
+      </div>
+
+      <div>
+           <label> Veuillez inscrire la durée du prêt en nombre d'années :</label>
+            <input class="N" id="N" type="text" /><br><br>
+      </div>
+
+      <div class="buttons">
+        <button class="calculer" onclick="calc();">Calculer</button>
+        <button class="reset" onClick="window.location.reload();">Tout effacer</button>
+      </div>
+
+    <div id="result_div" class="result_div">
+           <hr class="sep"> <p style="color:red; text-decoration: underline; margin-left: 35ex;" >Résultat</p><br>
+
+      <!-- <div id="PVMFPrime_div" class="PVMFPrime_div">
+           <label>Le montant total de l'hypothèque à payer incluant la prime est de : </label>     
+           <input class="PVMFPrime" id="PVMFPrime" type="text" readonly="true" /><label> $<label><br><br>
+      </div>-->
+
+      <div class="tauxSCHL_div" id="tauxSCHL_div">
+        <label>La valeur de la prime SCHL en pourcentage de la valeur du prêt est de :</label> 
+        <input class="tauxSCHL" id="tauxSCHL" type="text" readonly="true" /><label> %</label><label>&nbsp;&nbsp;&nbsp;&nbsp; → &nbsp;&nbsp;&nbsp;&nbsp; </label><input class="percent_to_dollars" id="%to$" readonly="true" /><label> $</label><br><br>
+      </div>
+
+      <div>
+        <label>Le montant mensuel que vous devez payer est de :</label> 
+        <input class="paiement" id="paiement" type="text" readonly="true" /><label> $</label><br><br>
+      </div>
+    </div>
+
+  </body>
+</html>
