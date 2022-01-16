@@ -1,0 +1,127 @@
+
+.Test{
+    margin-left: 200ex;
+    margin-top: 2ex;
+    font-size: 15px;
+}
+
+
+.parag {
+color: red;
+font-size: 20px;
+font-style: italic;
+text-decoration: underline;
+margin-left: 16ex;
+}
+
+.field-label{
+    font-weight: 900;
+    font-family: "Raleway", sans-serif;
+    color: rgb(47, 72, 130);
+    font-size: 1.2em;
+    margin-bottom: 0.4em;
+    display: inline-block;
+    margin-left: 800px;
+}
+
+.field-input {
+    width: 125px;
+    font: 21px / 32px
+      "Open Sans",sans-serif;
+    padding-left: 11px;
+    padding-right: 11px;
+    border: 1px solid black;
+    box-shadow: inset 1px 5px 9px -7px rgb(0 0 0 / 40%);
+    background-color: white;
+    margin-left: 800px;
+}
+
+.field-input-special1 {
+    width: 125px;
+    font: 21px / 32px
+      "Open Sans",sans-serif;
+    padding-left: 11px;
+    padding-right: 11px;
+    border: 1px solid black;
+    box-shadow: inset 1px 5px 9px -7px rgb(0 0 0 / 40%);
+    background-color: white;
+    margin-left: 800px;
+}
+
+.field-input-special2 {
+    width: 125px;
+    font: 21px / 32px
+      "Open Sans",sans-serif;
+    padding-left: 11px;
+    padding-right: 11px;
+    border: 1px solid black;
+    box-shadow: inset 1px 5px 9px -7px rgb(0 0 0 / 40%);
+    background-color: white;
+    
+}
+
+.button {
+    border: none;
+    border-radius: 0px;
+    width: auto;
+    padding: 0.4em 1em 0.6em;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+	font-weight:bold;
+	text-transform: none;
+	font-size: 1em;
+    background-color: rgb(47, 72, 130);
+	color: white;
+    transition:  background-color 200ms ease-out;
+}
+
+.button:hover {
+    background-color: rgb(90, 128, 216);
+}
+.PVMFPrime {
+width: 11ex;
+}
+
+.tauxSCHL {
+width: 5ex;
+}
+
+.percent_to_dollars {
+width: 11ex;
+}
+
+.paiement {
+width: 10ex;
+    
+}
+
+.sep {
+width: 40%;   
+margin: 0 30% 0 30%;
+}
+
+.calculer {
+    margin-left: 27ex;
+    margin-top: 2ex;
+    font-size: 15px;
+}
+
+.reset {
+font-size: 15px;
+}
+
+/*Next section is for div*/
+
+
+.tauxSCHL_div{
+    display: block;
+}
+
+
+.result_div {
+display: block;
+
+}
