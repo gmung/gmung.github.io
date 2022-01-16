@@ -1,0 +1,78 @@
+
+.Test{
+    margin-left: 200ex;
+    margin-top: 2ex;
+    font-size: 15px;
+}
+
+
+.parag {
+color: red;
+font-size: 20px;
+font-style: italic;
+text-decoration: underline;
+margin-left: 16ex;
+}
+
+.PV {
+width: 11ex;
+}
+
+.MF {
+width: 5ex;
+}
+
+.I {
+width: 5ex;
+}
+
+.N {
+width: 3.5ex;
+}
+
+.PVMFPrime {
+width: 11ex;
+}
+
+.tauxSCHL {
+width: 5ex;
+}
+
+.percent_to_dollars {
+width: 11ex;
+}
+
+.paiement {
+width: 10ex;
+    
+}
+
+.sep {
+width: 87ex;   
+margin-left: 0; 
+margin-top: 1ex;
+margin-bottom: 2ex;
+}
+
+.calculer {
+    margin-left: 27ex;
+    margin-top: 2ex;
+    font-size: 15px;
+}
+
+.reset {
+font-size: 15px;
+}
+
+/*Next section is for div*/
+
+
+.tauxSCHL_div{
+    display: none;
+}
+
+
+.result_div {
+display: none;
+
+}
