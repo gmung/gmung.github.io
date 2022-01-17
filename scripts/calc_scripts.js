@@ -24,7 +24,7 @@ function calc()
           var TauxSCHL10 = 0.031;
           var T10 = PVMF * TauxSCHL10;
           
-          var TauxSCHL15 = 0.028;
+          var TauxSCHL15 = 2.8 /100;
           var T15 = PVMF * TauxSCHL15;
 
           //document.getElementById('result').value = Math.round((PVMF/((1- Math.pow((1+Ie),-(N*12)))/Ie)) * 100) /100;
@@ -65,10 +65,7 @@ function calc()
        }
 
        
-function Test() {
-  var y = document.getElementById('result_div');
-  y.style.display = "block";
-}
+
 
 
 

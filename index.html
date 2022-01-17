@@ -1,65 +1,58 @@
 <html>
   <head> 
-      <title>Calculatrice financière</title>
+      <title>Calculatrice financière de versements hypothécaires</title>
        
       <script src="scripts/calc_scripts.js"></script>      
       <link rel="stylesheet" href="css/style.css">
 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
   </head>
   <body>
       
-        <h1 style="text-align: center ; border: 0px; margin: 0px; padding-top: 20px; padding-bottom: 20px; background-color: rgb(170, 170, 170);"; > Calculatrice financière par Gabriel Munger   </h1><br><br>
+        <h1 class="main-title" > Calculatrice de versements hypothécaires par Gabriel Munger   </h1><br><br>
 
-        <!--<button class="Test" onclick="Test();">Test</button>-->
-        
-        <!--<p class="parag"> Veuillez bien remplir tous les champs</p><br><br>-->
-
-        <br><br><br>
         
       <div>
           
           <label class="field-label" >Prix d'achat</label><br>
-          <input class="field-input" id="PV" type="number" /><br><br>
+          <input class="field-input" id="PV" type="number" min="10000" step="1" max="10000000" /><span class="field-input-unit"> $</span><br><br>
       </div>
         
       <div>
            <label class="field-label">Mise de fonds</label><br>
-           <input class="field-input" id="MF" type="number" min="10000" step="1" max="10000000" /><label for="MF"> $</label><br><br>
+           <input class="field-input" id="MF" type="number" min="5" step="1" max="100" /><span class="field-input-unit"> %</span><br><br>
       </div>
 
       <div>
            <label class="field-label"> Taux d'intérêt fixe sur 5 ans</label>
-           <input class="field-input" id="I" type="text" /><br><br>
+           <input class="field-input" id="I" type="number" min="0" step="0.01" max="5.75"  /><span class="field-input-unit"> %</span><br><br>
       </div>
 
       <div>
            <label class="field-label"> Période d'amortissement <br>(années)</label>
-            <input class="field-input" id="N" type="text" /><br><br>
+            <input class="field-input" id="N" type="number" min="5" step="1" max="25" /><br><br>
       </div>
 
-      <div class="buttons" style="margin-bottom: 30px; margin-top: 30px;">
-        <button style="margin-left: 800px;"class="button" onclick="calc();">Calculer</button>
-        <button class="button" onClick="window.location.reload();">Tout effacer</button>
+      <div class="buttons_div">
+        <button class="button1" onclick="calc();">Calculer</button>
+        <button class="button2" onClick="window.location.reload();">Tout effacer</button>
       </div>
 
     <div id="result_div" class="result_div">
-           <hr class="sep"> <p style=" text-align: center; font-weight: normal; font-size: 1.8em;" >Résultat</p><br>
-
-      <!-- <div id="PVMFPrime_div" class="PVMFPrime_div">
-           <label>Le montant total de l'hypothèque à payer incluant la prime est de : </label>     
-           <input class="PVMFPrime" id="PVMFPrime" type="text" readonly="true" /><label> $<label><br><br>
-      </div>-->
+           <hr class="sep"> <p style=" padding-top: 11px; padding-bottom: 11px; text-align: center; font-weight: normal; font-size: 1.8em;" >Résultat</p><br>
 
       <div class="tauxSCHL_div" id="tauxSCHL_div">
-        <label class="field-label">Prime SCHL</label><br>
-        <input class="field-input-special1" id="tauxSCHL" type="text" readonly="true" /> <label> %</label>&nbsp;&nbsp;&nbsp;
-        <span style="font-size: 30px; font: bold;"> →</span>&nbsp;&nbsp;&nbsp;   
-        <input class="field-input-special2"  id="%to$" readonly="true" /><label> $</label><br><br>
+        <label class="field-label-primeSCHL">Prime SCHL</label><br>
+        <input class="field-input-special-tauxSCHL" id="tauxSCHL" type="number" step="0.01" readonly="true" /> <span class="field-input-unit"> %</span>&nbsp;&nbsp;&nbsp;
+        <span style="font-size: 30px; font-weight: bold;"> →</span>&nbsp;&nbsp;&nbsp;   
+        <input class="field-input-special-percent-to-dollars"  id="%to$" readonly="true" /><span class="field-input-unit"> $</span><br><br>
       </div>
 
       <div>
         <label class="field-label">Montant mensuel à débourser</label> 
-        <input class="field-input" id="paiement" type="text" readonly="true" /><label> $</label><br><br>
+        <input class="field-input" id="paiement" type="text" readonly="true" /><span class="field-input-unit"> $</span><br><br>
       </div>
     </div>
 
