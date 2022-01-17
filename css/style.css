@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*800px pour la majorité des field en pc   */
+
+.main-title{
+    text-align: center; 
+    border: 0px; 
+    margin: 0px;  
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(170, 170, 170);
+    font-size: 20px;
+}
+
+.field-label{
+    font-weight: 900;
+    font-family: "Raleway", sans-serif;
+    color: rgb(47, 72, 130);
+    font-size: 1.2em;
+    margin-bottom: 0.4em;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.field-label-primeSCHL{
+    font-weight: 900;
+    font-family: "Raleway", sans-serif;
+    color: rgb(47, 72, 130);
+    font-size: 1.2em;
+    margin-bottom: 0.4em;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.field-input {
+    width: 125px;
+    font: 21px / 32px
+      "Open Sans",sans-serif;
+    padding-left: 11px;
+    padding-right: 11px;
+    border: 1px solid black;
+    box-shadow: inset 1px 5px 9px -7px rgb(0 0 0 / 40%);
+    background-color: white;
+    margin-left: 40;
+}
+
+.field-input-special-tauxSCHL {
+    width: 125px;
+    font: 21px / 32px
+      "Open Sans",sans-serif;
+    padding-left: 11px;
+    padding-right: 11px;
+    border: 1px solid black;
+    box-shadow: inset 1px 5px 9px -7px rgb(0 0 0 / 40%);
+    background-color: white;
+    margin-left: 20px;
+}
+
+.field-input-special-percent-to-dollars {
+    width: 125px;
+    font: 21px / 32px
+      "Open Sans", sans-serif;
+    padding-left: 11px;
+    padding-right: 11px;
+    border: 1px solid black;
+    box-shadow: inset 1px 5px 9px -7px rgb(0 0 0 / 40%);
+    background-color: white;
+    
+}
+
+
+.field-input-unit{
+    font-size: 21px;
+    font-weight: bold;
+    font-family: "Omen Sans", sans-serif;
+}
+
+.buttons_div{
+    margin-bottom: 30px; 
+    margin-top: 30px;
+}
+
+.button1 {
+    border: none;
+    border-radius: 0px;
+
+    width: auto;
+    padding: 0.6em 1em 0.6em;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+
+    font-family: "Open Sans", sans-serif;
+	font-weight:bold;
+	text-transform: none;
+	font-size: 1em;
+
+    background-color: rgb(47, 72, 130);
+	color: white;
+    transition:  background-color 200ms ease-out;
+
+    margin-left: 87;
+}
+
+.button1:hover {
+    background-color: rgb(90, 128, 216);
+}
+
+.button2 {
+    border: none;
+    border-radius: 0px;
+    width: auto;
+    padding: 0.6em 1em 0.6em;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+	font-weight:bold;
+	text-transform: none;
+	font-size: 1em;
+    background-color: rgb(47, 72, 130);
+	color: white;
+    transition:  background-color 200ms ease-out;
+}
+
+.button2:hover {
+    background-color: rgb(90, 128, 216);
+}
+
+/* 0 25 0 25 pour le pc*/ 
+.sep {
+width: 100%;   
+margin: 0;
+}
+
+/* All the div style are below ↓ */
+
+.tauxSCHL_div{
+    display: none;
+}
+
+
+.result_div {
+display: none;
+
+}
